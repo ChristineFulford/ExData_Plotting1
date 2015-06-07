@@ -3,7 +3,7 @@
 This assignment uses data from
 the <a href="http://archive.ics.uci.edu/ml/">UC Irvine Machine
 Learning Repository</a>, a popular repository for machine learning
-datasets. In particular, we will be using the "Individual household
+datasets. In particular, it uses the "Individual household
 electric power consumption Data Set" which I have made available on
 the course web site:
 
@@ -33,64 +33,33 @@ web site</a>:
 <li><b>Sub_metering_3</b>: energy sub-metering No. 3 (in watt-hour of active energy). It corresponds to an electric water-heater and an air-conditioner.</li>
 </ol>
 
-## Loading the data
-
-
-
-
-
-When loading the dataset into R, please consider the following:
-
-* The dataset has 2,075,259 rows and 9 columns. First
-calculate a rough estimate of how much memory the dataset will require
-in memory before reading into R. Make sure your computer has enough
-memory (most modern computers should be fine).
-
-* We will only be using data from the dates 2007-02-01 and
-2007-02-02. One alternative is to read the data from just those dates
-rather than reading in the entire dataset and subsetting to those
-dates.
-
-* You may find it useful to convert the Date and Time variables to
-Date/Time classes in R using the `strptime()` and `as.Date()`
-functions.
-
-* Note that in this dataset missing values are coded as `?`.
-
 
 ## Making Plots
 
-Our overall goal here is simply to examine how household energy usage
-varies over a 2-day period in February, 2007. Your task is to
-reconstruct the following plots below, all of which were constructed
+The overall goal is to examine how household energy usage
+varies over a 2-day period in February, 2007. The code reconstructs the plots below, all of which were constructed
 using the base plotting system.
 
-First you will need to fork and clone the following GitHub repository:
-[https://github.com/rdpeng/ExData_Plotting1](https://github.com/rdpeng/ExData_Plotting1)
-
-
-For each plot you should
-
-* Construct the plot and save it to a PNG file with a width of 480
+Each plot has been constructed and saved to a PNG file with a width of 480
 pixels and a height of 480 pixels.
 
-* Name each of the plot files as `plot1.png`, `plot2.png`, etc.
+* The plot files are named `plot1.png`, `plot2.png`, etc.
 
-* Create a separate R code file (`plot1.R`, `plot2.R`, etc.) that
-constructs the corresponding plot, i.e. code in `plot1.R` constructs
-the `plot1.png` plot. Your code file **should include code for reading
-the data** so that the plot can be fully reproduced. You should also
-include the code that creates the PNG file.
+* The R files that create the plots are called (`plot1.R`, `plot2.R`, etc.).  This code assumes the data file is in a specific directory, loads the data file and produces the plot.  
 
-* Add the PNG file and R code file to your git repository
+## Running the Code
+To run the code
+source("plot1.R")
+plot1()
+source("plot2.R")
+plot2()
+source("plot3.R")
+plot3()
+source("plot4.R")
+plot4()
 
-When you are finished with the assignment, push your git repository to
-GitHub so that the GitHub version of your repository is up to
-date. There should be four PNG files and four R code files.
-
-
-The four plots that you will need to construct are shown below. 
-
+## Output Plots
+Here's what the plots are supposed to look like:  
 
 ### Plot 1
 
